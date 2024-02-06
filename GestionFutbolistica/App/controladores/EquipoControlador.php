@@ -36,17 +36,27 @@
 
         }
 
-        public function editarPlantillaSTAFF(){
-
-        }
-
-
         public function cesion(){
 
         }
 
         public function traspaso(){
 
+        }
+
+        public function partidos(){
+            
+            $id_usuario = $_SESSION["usuarioSesion"]["id_usuario"];
+            $this->datos['partidos'] = $this->modelequipo->obtenerPartidos($id_usuario);
+
+            foreach($this->datos['partidos'] as $partido){
+                $id = $partido->Local;
+                $partido->Local=$this->modelequipo->obtenerDatosEquipo($id); 
+                $id = $partido->Visitante;
+                $partido->Visitante=$this->modelequipo->obtenerDatosEquipo($id); 
+            }
+
+            $this->vista("equipo/partidos", $this->datos);
         }
 
     }
