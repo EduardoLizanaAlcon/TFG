@@ -29,16 +29,15 @@
                         <a class="nav-link" href="#">Cesión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Plantilla</a>
+                        <a class="nav-link" href="<?php echo RUTA_URL ?>/EquipoControlador/mostrarplantilla">Plantilla</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Entrenador</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo RUTA_URL ?>/EquipoControlador/perfil">Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">STAFF</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
+                        <a class="nav-link" href="<?php echo RUTA_URL ?>/EquipoControlador/partidos">Partido</a>
                     </li>
                 </ul>
             </div>

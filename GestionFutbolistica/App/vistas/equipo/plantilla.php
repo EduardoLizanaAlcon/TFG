@@ -18,10 +18,7 @@
 
     //print_r($this->datos['entrenador']);
     ?>
-    <h1>STAFF Tecnico</h1>
-    <div id="ContenedorStaff">
-
-    </div>
+    
 </div>
 
 <?php
